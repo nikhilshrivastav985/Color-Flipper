@@ -1,0 +1,90 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: 'Quicksans', sans-serif;
+
+  /* 
+    COLORS
+   */
+   --background-color: hsl(191, 36%, 92%);
+   --nav-backgroundcolor: white;
+}
+
+body {
+  background: var(--background-color) ;
+}
+
+h4 {
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  letter-spacing: 0.3em;
+  background: var(--nav-backgroundcolor);
+  box-shadow: 0 3px 9px 0.5px hsla(0, 0%, 0%, 0.2);
+}
+
+p {
+  background-color: black;
+  color: white;
+  min-width: 45vw;
+  padding: 0.9em 2em;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  letter-spacing: 0.1rem;
+  color: hsl(55, 98%, 48%);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 3rem);
+}
+
+button {
+  border: 1.5px solid black;
+  padding: 0.7em 3em;
+  background: transparent ;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #000;
+  transition: all ease-in-out 0.2s;
+  color: hsl(0, 0%, 100%);
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  p {
+    width: 90vw;
+    font-size: 1.5em;
+  }
+
+}
+
+@media only screen and (max-width: 319px) {
+  p {
+    width: 90vw;
+    font-size: 1em;
+  }
+
+  button {
+    padding: 0.5em 2em;
+  }
+}
